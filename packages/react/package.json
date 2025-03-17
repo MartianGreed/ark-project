@@ -1,36 +1,36 @@
 {
-  "name": "@ark-project/react",
-  "version": "1.1.2",
-  "description": "",
-  "main": "./dist/esm/src/index.js",
-  "types": "./dist/types/src/index.d.ts",
-  "typings": "./dist/types/src/index.d.ts",
-  "scripts": {
-    "build": "pnpm build:clean && pnpm build:esm+types",
-    "build:clean": "rm -rf dist",
-    "build:esm+types": "tsc --project tsconfig.build.json --outDir ./dist/esm --declaration --declarationMap --declarationDir ./dist/types",
-    "clean": "rm -rf .turbo dist node_modules tsconfig.tsbuildinfo",
-    "lint": "eslint --ext .ts,.tsx .",
-    "lint:fix": "eslint --ext .ts,.tsx . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch src --exec \"pnpm run build\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@ark-project/core": "workspace:*",
-    "@starknet-react/chains": "^3.1.0",
-    "@starknet-react/core": "^3.5.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "starknet": "^6.11.0"
-  },
-  "devDependencies": {
-    "@ark-project/eslint-config": "workspace:*",
-    "@ark-project/typescript-config": "workspace:*",
-    "@types/react": "^18",
-    "nodemon": "^3.0.2",
-    "typescript": "^5.3.3"
-  }
+	"name": "@ark-project/react",
+	"version": "1.1.2",
+	"description": "",
+	"main": "./dist/esm/src/index.js",
+	"types": "./dist/types/src/index.d.ts",
+	"typings": "./dist/types/src/index.d.ts",
+	"scripts": {
+		"build": "pnpm build:clean && pnpm build:esm+types",
+		"build:clean": "rm -rf dist",
+		"build:esm+types": "tsc --project tsconfig.build.json --outDir ./dist/esm --declaration --declarationMap --declarationDir ./dist/types",
+		"clean": "rm -rf .turbo dist node_modules tsconfig.tsbuildinfo",
+		"lint": "eslint --ext .ts,.tsx .",
+		"lint:fix": "eslint --ext .ts,.tsx . --fix",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon --watch src --exec \"pnpm run build\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@ark-project/core": "workspace:*",
+		"@starknet-react/chains": "^3.1.2",
+		"@starknet-react/core": "^3.7.2",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"starknet": "^6.23.1"
+	},
+	"devDependencies": {
+		"@ark-project/eslint-config": "workspace:*",
+		"@ark-project/typescript-config": "workspace:*",
+		"@types/react": "^18.3.18",
+		"nodemon": "^3.1.9",
+		"typescript": "^5.8.2"
+	}
 }
